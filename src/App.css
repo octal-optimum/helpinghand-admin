@@ -1,0 +1,204 @@
+.form-control {
+    border: 1px solid rgb(203, 203, 203) !important;
+    margin-top: 10px;
+    /* background-color: #0288d11c; */
+  }
+  .alert-message {
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+  }
+
+  
+.card {
+    border : 0;
+    margin : 15px 0;
+    -webkit-box-shadow : 0 6px 0 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+            box-shadow : 0 6px 0 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+    border-radius : 8px;
+  }
+  .card[class*='gradient-'] .card-header, .card[class*='gradient-'] .card-footer {
+    background-color : initial;
+  }
+  .card .card-header {
+    padding : 1.5rem;
+    border-bottom : none;
+    background-color : transparent;
+  }
+  .card .card-header .card-title-wrap {
+    margin-left : -1.5rem;
+    padding-left : 1.5rem;
+    border-left : 3px solid #0BB197;
+  }
+  .card .card-subtitle {
+    margin-top : 10px;
+    margin-bottom : 10px;
+  }
+  .card .card-body {
+    padding : 0;
+    height : auto;
+  }
+  .card .card-block {
+    padding : 1rem 1.5rem 1.5rem;
+  }
+  .card .card-block:hover
+  {
+    
+    transition: transform 250ms ease-in-out;
+  }
+  .card .card-bordered {
+    border : 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .card.card-transparent {
+    background-color : transparent !important;
+  }
+  .card .card {
+    -webkit-box-shadow : none;
+            box-shadow : none;
+  }
+  .card .card-img {
+    position : relative;
+  }
+  .card .card-img .card-title {
+    color : #FFFFFF;
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    max-width : 100%;
+    padding : 24px;
+  }
+  .card .card-img.overlap {
+    margin-top : -40px;
+  }
+  .card .btn-floating {
+    display : inline-block;
+    color : #FFFFFF;
+    position : relative;
+    overflow : hidden;
+    z-index : 1;
+    width : 40px;
+    height : 40px;
+    line-height : 40px;
+    padding : 0;
+    background-color : #8C43D5;
+    border-radius : 50%;
+    -webkit-transition : 0.3s;
+         -o-transition : 0.3s;
+       -moz-transition : 0.3s;
+            transition : 0.3s;
+    cursor : pointer;
+    vertical-align : middle;
+    font-size : 1rem;
+    -webkit-box-shadow : 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            box-shadow : 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  .card .btn-floating.btn, .card .fc button.btn-floating, .fc .card button.btn-floating {
+    margin : 0;
+  }
+  .card .btn-floating i {
+    width : inherit;
+    display : inline-block;
+    text-align : center;
+    color : #FFFFFF;
+    font-size : 2rem;
+    line-height : 40px;
+  }
+  .card .btn-floating.btn-large {
+    width : 56px;
+    height : 56px;
+  }
+  .card .btn-floating.btn-large.halfway-fab {
+    bottom : -28px;
+  }
+  .card .btn-floating.btn-large i {
+    line-height : 56px;
+  }
+  .card .btn-floating.halfway-fab {
+    position : absolute;
+    right : 24px;
+    bottom : -20px;
+  }
+  .card .card-reveal {
+    padding : 24px;
+    position : absolute;
+    background-color : #FFFFFF;
+    width : 100%;
+    overflow-y : auto;
+    left : 0;
+    top : 100%;
+    height : 100%;
+    z-index : 3;
+    -webkit-transition : height 1s ease-in-out;
+         -o-transition : height 1s ease-in-out;
+       -moz-transition : height 1s ease-in-out;
+            transition : height 1s ease-in-out;
+    display : none;
+  }
+  .card .card-reveal .card-title {
+    cursor : pointer;
+  }
+  .card.horizontal .card-body {
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display : -webkit-box;
+    display :    -moz-box;
+    display :         flex;
+  }
+  .card.horizontal .card-img {
+    max-width : 50%;
+  }
+  .card.horizontal .card-img img {
+    border-radius : 2px 0 0 2px;
+    max-width : 100%;
+    width : auto;
+  }
+  .card .card-stacked {
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display : -webkit-box;
+    display :    -moz-box;
+    display :         flex;
+    -webkit-flex-direction : column;
+        -ms-flex-direction : column;
+    -webkit-box-orient : vertical;
+    -webkit-box-direction : normal;
+       -moz-box-orient : vertical;
+       -moz-box-direction : normal;
+            flex-direction : column;
+    -webkit-flex : 1;
+        -ms-flex : 1;
+    -webkit-box-flex : 1;
+       -moz-box-flex : 1;
+            flex : 1;
+    position : relative;
+  }
+  .card h1.card-title, .card h2.card-title, .card h3.card-title, .card h4.card-title, .card h5.card-title, .card h6.card-title {
+    font-weight : 600;
+    letter-spacing : 0.05rem;
+    font-size : 1.25rem;
+    margin-bottom : 0.25rem;
+  }
+  .card .card-footer {
+    padding : 1rem 1.5rem;
+    background : white;
+    overflow : hidden;
+  }
+  .card.card-inverse .card-blockquote .blockquote-footer, .card.card-inverse .card-link, .card.card-inverse .card-subtitle, .card.card-inverse .card-text, .card.card-inverse .card-title, .card.card-inverse .card-footer, .card.card-inverse a, .card.card-inverse a:hover, .card.card-inverse label, .card.card-inverse span, .card.card-inverse .form-group:hover, .card.card-inverse div, .card.card-inverse input {
+    color : #FFFFFF;
+  }
+  .card.card-inverse .form-group.is-focused .checkbox label, .card.card-inverse .form-group.is-focused label.checkbox-inline, .card.card-inverse .form-group.is-focused .radio label, .card.card-inverse .form-group.is-focused label.radio-inline {
+    color : #FFFFFF;
+  }
+  .card.card-inverse hr {
+    border-color : #FFFFFF;
+  }
+  .card.card-inverse .checkbox label {
+    color : #FFFFFF;
+  }
+  .card.card-inverse .checkbox label .checkbox-decorator .check {
+    border-color : rgba(255, 255, 255, 0.54);
+  }
+  .card.card-inverse input::-webkit-input-placeholder, .card.card-inverse input::-moz-placeholder, .card.card-inverse input:-ms-input-placeholder, .card.card-inverse input:-moz-placeholder {
+    color : #FFFFFF;
+  }
