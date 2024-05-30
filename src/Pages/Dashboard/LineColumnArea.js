@@ -13,7 +13,7 @@ const LineColumnAreaData = {
       name: "Maintenance",
       type: "area",
       data: [44, 55, 41, 42, 22, 43, 21, 41, 56, 27, 43, 27],
-    },
+    },///
     {
       name: "Profit",
       type: "line",

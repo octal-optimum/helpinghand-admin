@@ -114,10 +114,10 @@ function Slot() {
             <div className="card">
               <div className="card-header">
                 <div className="card-title-wrap bar-success d-flex align-items-center">
-                  <h4 className="card-title">Slot </h4>
+                  <h5 className="card-title">Slot </h5>
                   <Button
                         color="primary"
-                        className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                        className="btn font-14 btn-sm btn-primary waves-effect m-2 waves-light w-10"
                     onClick={handleAddSlotClick}
                   >
                     Add Slot
@@ -164,18 +164,18 @@ function Slot() {
                                 </td>
 
                                 <td className="text-center align-middle">
-                                  <Button
+                                  <button
                                     color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                    className="btn font-14 btn-outline-info btn-sm waves-effect m-2 waves-light w-10"
                                     onClick={() =>
                                       handleEditSlotClick(slot._id)
                                     }
                                   >
                                     Edit
-                                  </Button>
+                                  </button>
 
                                   <button
-                                    className="btn btn-danger ms-2"
+                                    className="btn btn-outline-danger btn-sm ms-2"
                                     onClick={() =>
                                       handleDeleteSlotClick(slot._id)
                                     }

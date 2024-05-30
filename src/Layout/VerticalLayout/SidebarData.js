@@ -7,29 +7,11 @@ const SidebarData = [
         label: "Dashboard",
         icon: "mdi mdi-home-variant-outline",
         url: "/dashboard",
-        issubMenubadge: true,
-        bgcolor: "bg-primary",
-        badgeValue: "3"
-    },
-    {
-        label: "Calendar",
-        icon: "mdi mdi-calendar-outline",
         isHasArrow: true,
-        url: "/calendar",
+       
     },
-    {
-        label: "Email",
-        icon: "mdi mdi-email-outline",
-        subItem: [
-            { sublabel: "Inbox", link: "/inbox" },
-            { sublabel: "Read Email", link: "/read-email" },
-            { sublabel: "Email Compose", link: "/compose-email" },
-        ],
-    },
-    {
-        label: "Pages",
-        isMainMenu: true,
-    },
+  
+    
     {
         label: "Category",
         icon: "mdi mdi-hamburger",

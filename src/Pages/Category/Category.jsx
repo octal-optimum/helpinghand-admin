@@ -85,6 +85,7 @@ const Category = (props) => {
     setDeleteCategoryId(id);
   };
 
+
   const handlePageChange = ({ selected }) => {
     const newPage = selected + 1 || currentPage;
     setCurrentPage(newPage);
@@ -100,6 +101,8 @@ const Category = (props) => {
   const handleEditCategoryClick = (id) => {
     navigate(`/editcategory/${id}`);
   };
+
+ 
 
   return (
     <>
@@ -117,10 +120,10 @@ const Category = (props) => {
             <div className="card mt-1">
               <div className="card-header">
                 <div className="card-title-wrap bar-success d-flex align-items-center">
-                  <h3 className="card-title">Category </h3>
+                  <h5 className="card-title">Category </h5>
                   <Button
                     color="primary"
-                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                    className="btn btn-primary btn-sm waves-effect waves-light m-2"
                     onClick={handleAddCategoryClick}
                   >
                     Add Category
@@ -169,31 +172,33 @@ const Category = (props) => {
                                     }}
                                   />
                                 </td>
-                                <td>
-                                  <Button
+                                <td className="text-center align-middle">
+                                  <button
                                     onClick={() =>
                                       handleViewServiceClick(category._id)
                                     }
                                     color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                    size="sm"
+                                    className="btn btn-outline-primary btn-sm waves-effect waves-light"
                                   >
                                     View Service
-                                  </Button>
+                                  </button>
                                 </td>
                                 <td className="text-center align-middle">
-                                  <Button
-                                    color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                <button
+                      type="button"
+                      className="btn btn-outline-info btn-sm waves-effect waves-light"
                                     style={{ marginRight: "10px" }}
                                     onClick={() =>
                                       handleEditCategoryClick(category._id)
                                     }
                                   >
                                     Edit
-                                  </Button>
+                                  </button>
 
                                   <button
-                                    className="btn btn-danger ms-2"
+                                   type="button"
+                                   className="btn btn-outline-danger btn-sm waves-effect waves-light"
                                     onClick={() =>
                                       handleDeleteCategoryClick(category._id)
                                     }

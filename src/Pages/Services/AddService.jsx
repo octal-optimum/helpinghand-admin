@@ -60,7 +60,7 @@ const save = (e) => {
 let item ={
   name:serviceName,
   isActive:true,
-  mediaLink:media,
+  mediaLink:[media],
   categoryId:id,
   pricePerHour:price,
   gstPercent:gst,
@@ -284,17 +284,17 @@ dispatch(AddServices(item))
                     </Row>
 
                         <div className="col-md-10 mt-3" align="center">
-                          <Button
-                            className="btn btn-danger"
+                          <button
+                            className="btn btn-outline-danger"
                             onClick={cancelClick}
                             
                           >
                             Cancel
-                          </Button>
+                          </button>
                           <Button
                             type="submit"
                             color="primary"
-                            className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                            className="btn font-14 btn-info waves-effect m-2 waves-light w-10"
                             onClick={save}
                             disabled={buttonDisabled}
                           >

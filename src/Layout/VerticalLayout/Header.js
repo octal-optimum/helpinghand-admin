@@ -96,86 +96,10 @@ const Header = (props) => {
               <i className="ri-menu-2-line align-middle"></i>
             </button>
 
-            <form className="app-search d-none d-lg-block">
-              <div className="position-relative">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search..."
-                />
-                <span className="ri-search-line"></span>
-              </div>
-            </form>
+           
           </div>
 
-          <div className="d-flex">
-            <div className="dropdown d-inline-block d-lg-none ms-2">
-              <button
-                onClick={() => setsearch(!search)}
-                type="button"
-                className="btn header-item noti-icon"
-                id="page-header-search-dropdown"
-              >
-                <i className="ri-search-line" />
-              </button>
-              <div
-                className={
-                  search
-                    ? "dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 show"
-                    : "dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                }
-                aria-labelledby="page-header-search-dropdown"
-              >
-                <form className="p-3">
-                  <div className="form-group m-0">
-                    <div className="input-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Search ..."
-                        aria-label="Recipient's username"
-                      />
-                      <div className="input-group-append">
-                        <button className="btn btn-primary" type="submit">
-                          <i className="ri-search-line" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <LanguageDropdown />
-            <AppsDropdown />
-
-            <div className="dropdown d-none d-lg-inline-block ms-1">
-              <button
-                type="button"
-                onClick={toggleFullscreen}
-                className="btn header-item noti-icon"
-                data-toggle="fullscreen"
-              >
-                <i className="ri-fullscreen-line" />
-              </button>
-            </div>
-
-            <NotificationDropdown />
-
-            <ProfileMenu />
-
-            <div
-              className="dropdown d-inline-block"
-              onClick={() => dispatch(showRightSidebarAction(!showRightSidebar))}
-            >
-              <button
-                type="button"
-                className="btn header-item noti-icon right-bar-toggle waves-effect"
-              >
-                <i className="mdi mdi-cog"></i>
-              </button>
-            </div>
-          </div>
+        
         </div>
       </header>
     </React.Fragment>

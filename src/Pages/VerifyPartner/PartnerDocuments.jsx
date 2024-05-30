@@ -90,7 +90,7 @@ function GetpartnersDocuments() {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-title-wrap bar-success d-flex align-items-center">
-                        <h4 className="card-title">Partner Documents</h4>
+                        <h5 className="card-title">Partner Documents</h5>
                       </div>
                     </div>
                     <div className="card-body collapse show">

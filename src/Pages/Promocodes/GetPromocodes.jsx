@@ -130,10 +130,10 @@ function Promocodes() {
             <div className="card">
               <div className="card-header">
                 <div className="card-title-wrap bar-success d-flex align-items-center">
-                  <h4 className="card-title">Promocodes </h4>
+                  <h5 className="card-title">Promocodes </h5>
                   <Button
                     color="primary"
-                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                    className="btn font-14 btn-primary btn-sm waves-effect m-2 waves-light w-10"
                     onClick={handleAddServiceClick}
                   >
                     Add Promocodes
@@ -186,19 +186,19 @@ function Promocodes() {
                                 </td>
 
                                 <td className="text-center align-middle">
-                                  <Button
+                                  <button
                                     color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                    className="btn font-14 btn-outline-info btn-sm waves-effect m-2 waves-light w-10"
                                     style={{ marginRight: "10px" }}
                                     onClick={() =>
                                       handleEditPromocodesClick(promocodes._id)
                                     }
                                   >
                                     Edit
-                                  </Button>
+                                  </button>
 
                                   <button
-                                    className="btn btn-danger ms-2"
+                                    className="btn btn-outline-danger btn-sm ms-2"
                                     onClick={() =>
                                       handleDeletePromocodesClick(
                                         promocodes._id

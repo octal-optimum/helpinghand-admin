@@ -34,9 +34,6 @@ const getLayout = (layoutType) => {
 };
 
 const Index = () => {
-
-
-
   const Layout = getLayout("vertiacal");
 
   return (

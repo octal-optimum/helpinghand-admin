@@ -64,7 +64,7 @@ function Service() {
       .unwrap()
       .then((data) => {
         console.log(data);
-        setService(data.service);
+        setService(data.service.data);
         setTotaldata(data?.service?.totalDataCount);
         setTimeout(() => {
           setLoading(false);
@@ -135,10 +135,10 @@ function Service() {
             <div className="card">
               <div className="card-header">
                 <div className="card-title-wrap bar-success d-flex align-items-center">
-                  <h4 className="card-title">Service </h4>
+                  <h5 className="card-title">Service </h5>
                   <Button
                     color="primary"
-                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                    className="btn font-14 btn-primary btn-sm waves-effect m-2 waves-light w-10"
                     onClick={handleAddServiceClick}
                   >
                     Add Service
@@ -205,19 +205,19 @@ function Service() {
                                 </td>
 
                                 <td className="text-center align-middle">
-                                  <Button
+                                  <button
                                     color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                    className="btn font-14 btn-outline-info waves-effect m-2 waves-light w-10"
                                     style={{ marginRight: "10px" }}
                                     onClick={() =>
                                       handleEditServiceClick(service._id)
                                     }
                                   >
                                     Edit
-                                  </Button>
+                                  </button>
 
                                   <button
-                                    className="btn btn-danger ms-2"
+                                    className="btn btn-outline-danger ms-2"
                                     onClick={() =>
                                       handleDeleteServiceClick(service._id)
                                     }

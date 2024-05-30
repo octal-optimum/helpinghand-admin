@@ -113,7 +113,7 @@ function GetReleventpartners() {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-title-wrap bar-success d-flex align-items-center">
-                        <h4 className="card-title">Relevant Partners</h4>
+                        <h5 className="card-title">Relevant Partners</h5>
                       </div>
                     </div>
                     <div className="card-body collapse show">
@@ -128,7 +128,8 @@ function GetReleventpartners() {
                               <div>
                                 <div className="d-flex justify-content-end">
                                   <Button
-                                    className=" saveBtn ms-2"
+                                   color="primary"
+                                   className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
                                     onClick={Cancelbooking}
                                   >
                                     Cancel Booking

@@ -118,14 +118,14 @@ function SlotDiscount() {
             <div className="card">
               <div className="card-header">
                 <div className="card-title-wrap bar-success d-flex align-items-center">
-                  <h4 className="card-title">Slot Discounts </h4>
-                  <Button
+                  <h5 className="card-title">Slot Discounts </h5>
+                  <button
                     color="primary"
-                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                    className="btn btn-sm font-14 btn-primary waves-effect m-2 waves-light w-10"
                     onClick={handleAddSlotClick}
                   >
                     Add Slot Discounts
-                  </Button>
+                  </button>
                 </div>
               </div>
               <div className="card-body collapse show">
@@ -168,18 +168,18 @@ function SlotDiscount() {
                                 </td>
 
                                 <td className="text-center align-middle">
-                                  <Button
+                                  <button
                                     color="primary"
-                                    className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                    className="btn font-14 btn-outline-info btn-sm waves-effect m-2 waves-light w-10"
                                     style={{ marginRight: "10px" }}
                                     onClick={() =>
                                       handleEditSlotClick(slot._id)
                                     }
                                   >
                                     Edit
-                                  </Button>
+                                  </button>
                                   <button
-                                    className="btn btn-danger ms-2"
+                                    className="btn btn-outline-danger btn-sm ms-2"
                                     onClick={() =>
                                       handleDeleteSlotClick(slot._id)
                                     }

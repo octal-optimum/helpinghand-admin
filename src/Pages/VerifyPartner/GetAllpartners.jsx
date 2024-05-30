@@ -91,7 +91,7 @@ function GetAllpartners() {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-title-wrap bar-success d-flex align-items-center">
-                        <h4 className="card-title">Partners </h4>
+                        <h5 className="card-title">Partners </h5>
                        
                       </div>
                     </div>
@@ -154,7 +154,7 @@ function GetAllpartners() {
                                         <td className="text-center align-middle">
                                         <button
                                              color="primary"
-                                             className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                                             className="btn font-14 btn-primary btn-sm waves-effect m-2 waves-light w-10"
                                           onClick={() =>
                                             handleViewDocuments(partner._id)
                                           }

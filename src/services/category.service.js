@@ -316,9 +316,10 @@ static AddSlots(item) {
       .put(api,item,config)
       .then((response) => {
           if (response) {
-              // localStorage.setItem("user", JSON.stringify(response));
-          }
-          return response;
+            return response;
+          }  
+      }).catch(error => {
+        throw error;
       });
 }
 

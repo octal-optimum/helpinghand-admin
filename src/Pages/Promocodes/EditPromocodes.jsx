@@ -33,11 +33,12 @@ const EditPromoCodes = () => {
     dispatch(GetPromocodes(item))
       .unwrap()
       .then((data) => {
-        setPromocode(data?.promocodes?.data[0]?.promoCode);
-        setDiscount(data?.promocodes?.data[0]?.discount);
-        setMaxLimit(data?.promocodes?.data[0]?.maxLimit);
-        setStartDate(data?.promocodes?.data[0]?.startDate.split("T")[0]);
-        setEndDate(data?.promocodes?.data[0]?.endDate.split("T")[0]);
+        console.log(data)
+        setPromocode(data?.promocodes[0]?.promoCode);
+        setDiscount(data?.promocodes[0]?.discount);
+        setMaxLimit(data?.promocodes[0]?.maxLimit);
+        setStartDate(data?.promocodes[0]?.startDate.split("T")[0]);
+        setEndDate(data?.promocodes[0]?.endDate.split("T")[0]);
       })
       .catch(({ message }) => {
         alert(message);
@@ -167,7 +168,7 @@ const EditPromoCodes = () => {
                   <div class="card">
                     <div class="card-header">
                       <div class="card-title-wrap bar-success d-flex align-items-center">
-                        <h4 class="card-title">Add Promo Code</h4>
+                        <h5 class="card-title">Add Promo Code</h5>
                       </div>
                     </div>
                     <div class="card-body collapse show">
@@ -257,13 +258,13 @@ const EditPromoCodes = () => {
                         </Row>
 
                         <div className="col-md-10 mt-3" align="center">
-                          <Button className="btn btn-danger" onClick={cancelClick}>
+                          <button className="btn btn-outline-danger" onClick={cancelClick}>
                             Cancel
-                          </Button>
+                          </button>
                           <Button
                             type="submit"
                             color="primary"
-                            className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                            className="btn font-14 btn-info waves-effect m-2 waves-light w-10"
                                    onClick={save}
                             disabled={buttonDisabled}
                           >

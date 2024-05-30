@@ -34,12 +34,13 @@ function AddSlot() {
     if (endTime === "") {
       setEndTimeError("Please enter end time");
     }
+
     if (!day || !startTime || !endTime) {
       return;
     }
     let item = {
       startTime: startTime,
-      endTime: endTime,
+      endTime: endTime =="00:00"?"24:00":endTime,
       day: day,
       isActive: true,
     };
@@ -52,6 +53,7 @@ function AddSlot() {
       })
       .catch(({ message }) => {
         setButtonDisabled(false);
+
         alert(message);
       });
   };
@@ -102,7 +104,7 @@ function AddSlot() {
             <div class="card">
               <div class="card-header">
                 <div class="card-title-wrap bar-success d-flex align-items-center">
-                  <h4 class="card-title">Add Slot</h4>
+                  <h5 class="card-title">Add Slot</h5>
                 </div>
               </div>
               <div class="card-body collapse show">
@@ -159,16 +161,16 @@ function AddSlot() {
                     </div>
                   </Row>
                   <div className="col-md-10 mt-3" align="center">
-                    <Button
-                      className="btn btn-danger ms-2"
+                    <button
+                      className="btn btn-outline-danger ms-2"
                       onClick={cancelClick}
                     >
                       Cancel
-                    </Button>
+                    </button>
                     <Button
                       type="submit"
                       color="primary"
-                      className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                      className="btn font-14 btn-info waves-effect m-2 waves-light w-10"
                       onClick={save}
                       disabled={buttonDisabled}
                     >

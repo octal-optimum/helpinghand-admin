@@ -120,21 +120,21 @@ function AddCategoery() {
                       </div>
 
                       <div className="col-md-10 mt-3" align="center">
-                        <Button
-                          className="btn btn-danger ms-2"
+                        <button
+                          className="btn  btn-outline-danger waves-light"
                           onClick={cancelClick}
                         >
                           Cancel
-                        </Button>
-                        <Button
+                        </button>
+                        <button
                           type="submit"
                           color="primary"
-                          className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                          className="btn font-14 btn-info waves-effect m-2 waves-light"
                           disabled={buttonDisabled}
                           onClick={save}
                         >
                           Submit
-                        </Button>
+                        </button>
                       </div>
                     </div>
                   </div>

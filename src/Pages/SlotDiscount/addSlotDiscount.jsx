@@ -133,7 +133,7 @@ if(percentage === ""){
                   <div class="card">
                     <div class="card-header">
                       <div class="card-title-wrap bar-success d-flex align-items-center">
-                        <h4 class="card-title">Add Slot discount</h4>
+                        <h5 class="card-title">Add Slot discount</h5>
                       </div>
                       </div>
                       <div class="card-body collapse show">
@@ -188,22 +188,22 @@ if(percentage === ""){
                         </div>
                         </Row>
                         <div className="col-md-10 mt-3" align="center">
-                          <Button
-                            className="btn btn-danger"
+                          <button
+                            className="btn btn-outline-danger "
                             onClick={cancelClick}
                             
                           >
                             Cancel
-                          </Button>
-                          <Button
+                          </button>
+                          <button
                             type="submit"
                             color="primary"
-                            className="btn font-14 btn-primary waves-effect m-2 waves-light w-10"
+                            className="btn font-14 btn-info  waves-effect m-2 waves-light w-10"
                             onClick={save}
                             disabled={buttonDisabled}
                           >
                             Submit
-                          </Button>
+                          </button>
                         </div>
                           </div>
                         </div>
